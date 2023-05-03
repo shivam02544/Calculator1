@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<link rel="stylesheet" type="text/css" href="./index.css">
+<body>
+	<h1>Calculator</h1>
+	<form action="cal1.jsp" class="form">
+		<div class="main-btn">
+			<input type="button" onclick="parent.location='index.html'" value="Standard">	
+			<input style="background-color: green" type="button" onclick="parent.location='scin.html'" value="Scientific">
+		</div>	
+		<div class="main-con">
+			<label>Value</label>
+			<input type="text" name="num1" required > 
+			<label>Result</label>
+			<input type="text" name="rst" readonly>
+			<label for="opr">Choose an Operator</label>
+			<select id="opr" name="opr">
+    			<option name="opr" value="sqr">Square</option>
+    			<option name="opr" value="cube">Cube</option>
+    			<option name="opr" value="sqrt">Square Root</option>
+    			<option name="opr" value="cbrt">Cube Root</option>
+    			<option name="opr" value="fact">Factorial</option>
+    			<option name="opr" value="pie">Pie</option>
+    			<option name="opr" value="sin">sin</option>
+    			<option name="opr" value="cos">cos</option>
+    			<option name="opr" value="tan">tan</option>
+    
+			</select>
+			<input type="submit" value="Calculate" >
+			
+		</div>
+	</form>
+</body>
+</html>
